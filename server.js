@@ -11,7 +11,7 @@ var app = express();
 
 // 路由
 app.use('/', function(req, res) {
-    var url = 'https://www.google.com' + req.url;
+    var url = 'https://www.baidu.com' + req.url;
     req.pipe(request(url)).pipe(res);
 });
 
