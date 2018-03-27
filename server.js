@@ -11,7 +11,8 @@ var app = express();
 
 // 路由
 app.use('/', function(req, res) {
-    var url = 'https://www.google.com' + req.url;
+    //var url = 'https://www.google.com' + req.url;
+	var url = 'https://k8s.gcr.io' + req.url;
     req.pipe(request(url)).pipe(res);
 });
 
